@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lalibela</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+         
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        
+        <style>
+            body{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: rgb(104, 25, 25);
+                text-align: center;
+                background-image: linear-gradient(#f0d7d7, #ACBB78);
+            }
+            div{
+                max-width:800px;
+                margin:0 auto;
+                text-align: center;
+            }
+            h1{
+                line-height: 30px;;
+            }
+            h2{
+                
+                color:brown;
+                font-weight: bolder;
+                font-size: 36px;
+                margin-top: 5px;
+                font-family:fantasy;
+               
+            }
+            h3{
+                text-align: center;
+            }
+            img{
+                width:500px;
+                margin: 0 auto;
+            }
+            p{ 
+                line-height: 20px;
+                
+            }
+            span{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            button{
+                padding: 10px;
+                border-radius: 60px;
+                border:none;
+                background-color: white;
+                color:brown;
+                font-size: 20px;
+                box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+                margin: 30px;
+                transition:ease-in;
+            }
+            button:hover{
+                background-color: brown;
+                color:white;
+                
+
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+        <h1>Are you intrested in traveling? </h1>
+            <h3> Well you should visit <br>👇🏽</h3>
+            <hr>
+        <h2><em>Lalibela</em></h2>
+        <img class="img-responsive" alt='Lalibela Rock Hewn church' src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcT26oCRGUfr9aaKIqcAHs1K6czjMHNb3f1d8e_2cCT66twqAVd7enzUnK2EKTmaJXn9">
+        <br>
+        <p> <span>Lalibela</span>  is a town located in the Amhara Region of northern Ethiopia. 
+            It is famous for its remarkable rock-hewn churches,
+            which are considered some of the most important religious and historical sites in Ethiopia. 
+            The churches of Lalibela are often referred to as the "New Jerusalem" and are a <span>UNESCO</span> World Heritage site.
+           <br>
+           <br>
+           <br>
+            The churches were carved directly into the solid rock of the ground during the 12th century,
+             under the rule of <a href="https://en.wikipedia.org/wiki/Gebre_Meskel_Lalibela">King Lalibela</a>, 
+            who is credited with their creation. The complex consists of 11 churches,
+            and they are divided into two main groups: the northern cluster and the southern cluster. 
+            The churches were carved both externally and internally, with intricate details, crosses, windows, and other religious symbols.
+            The craftsmanship and engineering required for such an undertaking are truly remarkable, 
+            and the structures are a testament to the devotion of the people and the ingenuity of the builders.
+        </p>
+        <div> 
+            <button> ✈️ Book a flight to Lalibela</button>
+            <hr>
+            <span> For more information-</span> 
+            <br>
+            <br>
+                   contact: +25180499718
+                   <br>
+                   <a href="mailto:name@rapidtables.com">Send mail</a><br>       
+        </div>
+    </div> 
+    
+    <script>
+        function book(){
+            let name=prompt('What is your name?')
+            let email=prompt('email:')
+            let age=prompt('How old are you?')
+            if (name && age){
+                 if (age>= 18){
+                    document.querySelector('div').innerHTML=`Thank you ${name}! <br> We will be in touch through email.`
+                }else{
+                    document.querySelector('div').innerHTML=` Sorry! You are not eligible to book a flight on your own.
+                    <br> please ask help from your Gurdian.`
+                }
+            }
+        }
+
+        let element= document.querySelector('button');
+            element.addEventListener('click',book)
+            
+    </script>
+
+    </body>
+</html>
